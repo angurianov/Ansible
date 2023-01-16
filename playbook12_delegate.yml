@@ -1,0 +1,51 @@
+---
+
+- name: delegate
+  hosts: all
+  become: yes
+
+  vars:
+    mytext: "Privet medved"
+
+  tasks:
+  - name: ping test
+    ping:
+
+  - name: unregister server from load balancer
+    shell: echo this server {{ inventory_hostname }} was deregistered from load balancer, node name is {{ ansible_nodename }} >> /home/artem/ansible/log.txt
+    delegate_to: 127.0.0.1
+    become: no
+
+  - name: update my database
+    shell: echo UPDATING database...
+    run_once: true
+
+
+  - name: create file1
+    copy:
+      dest: /home/file1.txt
+      content: |
+        this is file1
+        on english hello world
+        on russian {{ mytext }}
+    delegate_to: debian
+
+  - name: create file2
+    copy:
+      dest: /home/file2.txt
+      content: |
+        this is file2
+        on english hello world
+        on russian {{ mytext }}
+
+
+  - name: reboot my servers and wait to restart
+    reboot:
+      msg: "Reboot by Ansible"
+      connect_timeout: 5
+      reboot_timeout: 600
+      pre_reboot_delay: 0
+      post_reboot_delay: 30
+      test_command: whoami
+
+

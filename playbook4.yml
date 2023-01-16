@@ -1,0 +1,33 @@
+---
+- name: variables
+  hosts: all
+  become: yes
+
+  vars:
+    message1: privet
+    message2: world
+    secret: fdsafs;dfjs;adfj;kjj
+
+  tasks:
+  - name: print secret vaiable
+    debug:
+      var: secret
+
+  - debug:
+      msg: "Секретное слово: {{secret}}"
+
+  - debug:
+      msg: "Владелец этого сервера {{ owner }}"
+
+  - set_fact: full_message="{{ message1 }} {{ message2 }} from {{ owner }}"
+  - debug:
+      var: full_message
+
+  - debug:
+      var: ansible_distribution
+
+  - shell: uptime
+    register: resultsss
+
+  - debug:
+      var: resultsss

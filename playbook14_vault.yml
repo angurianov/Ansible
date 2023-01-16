@@ -1,0 +1,29 @@
+---
+- name: ansible vault
+  hosts: all
+  become: yes
+
+  vars:
+    admin_password: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          65363836313565633433383966336435616631613436306431326563663430356638613361376538
+          3664353439646130323535323432383936346136373236620a636234386336393036383862646335
+          31643632356137323635396237623234346266366530363235663737313064346134623566643433
+          3436386465353537390a636636613831626466343565373638376630333464643634623835396534
+          3939
+
+
+  tasks:
+  - name: install package tree
+    yum: name=tree state=latest
+    when: ansible_os_family == "RedHat"
+
+  - name: create config file
+    copy:
+      dest: "/home/root/myconfig-ansible.conf"
+      content:
+        port = 9092
+        log  = 7days
+        home = /opt/kafka/bin/
+        user = admin
+        password = {{ admin_password }}

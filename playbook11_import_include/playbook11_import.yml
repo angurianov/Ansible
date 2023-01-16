@@ -1,0 +1,16 @@
+---
+- name: import+include
+  hosts: all
+  become: yes
+
+  vars:
+    mytext: "Privet medved"
+
+  tasks:
+  - name: ping test
+    ping:
+
+  - include_tasks: create_folders.yml
+  - include_tasks: create_files.yml
+    vars:
+      mytext: "hello vmesto privet"

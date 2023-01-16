@@ -1,0 +1,13 @@
+
+[deb]
+debian ansible_host=192.168.31.131 ansible_user=root ansible_ssh_public_key_file=/home/artem/.ssh/is_rsa owner=Petya
+
+[cent]
+centos ansible_host=192.168.31.39  ansible_ssh_pass=123456 owner=Vasya
+
+
+[all_servers:children]
+deb
+cent
+
+

@@ -1,0 +1,33 @@
+---
+
+- name: loops playbook
+  hosts: debian
+  become: yes
+
+  tasks:
+  - name: say hello to all
+    debug: msg="Hello {{ item }}"
+    loop:
+      - "Vasya"
+      - "Petya"
+      - "Masha"
+      - "Olya"
+
+
+  - name: loop until example
+    shell: echo -n X >> myfile.txt && cat myfile.txt
+    register: output
+    delay: 2
+    retries: 10
+    until: output.stdout.find("XXXX") == false
+
+
+  - name: print output final
+    debug: var="output.stdout"
+
+  - name: install many packages
+    apt: name= {{ item }} state=latest
+    with_items:
+      - python
+      - tree
+      - mysql

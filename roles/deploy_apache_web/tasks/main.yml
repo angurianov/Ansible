@@ -1,0 +1,43 @@
+---
+# tasks file for deploy_apache_web
+  - name: check and print linux version
+    debug: var=ansible_os_family
+
+  - block: ######block for redhat#########
+
+
+    - name: install apache for redhat
+      yum: name=httpd state=latest
+
+    - name: start apache and enable it on the every boot for redhat
+      service: name=httpd state=started enabled=yes
+
+    when: ansible_os_family == "RedHat"
+
+
+  - block: ########block for debian#########
+
+    - name: Install apache
+      apt: name=apache2 state=latest
+
+
+    - name: start apache and enable it on the every boot for debian
+      service: name=apache2 state=started enabled=yes
+
+    when: ansible_os_family == "Debian"
+
+  - name: generate index.html file
+    template: src=index.j2 dest={{ destin_folder }}/index.html mode=0555
+    notify:
+        - restart apache redhat
+        - restart apache debian
+
+
+  - name: copy homepage to server
+    copy: src={{ item }} dest={{ destin_folder }} mode=0555
+    loop:
+      - "index.jpg"
+#      - "index.html"
+    notify:
+        - restart apache redhat
+        - restart apache debian

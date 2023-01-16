@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  
+
+		<meta charset="utf-8">				
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>Гурьянова</title>
+
+		<link rel="stylesheet" href="http://pc-setup.ru/wp-content/themes/xmarkup/style.css" type="text/css" media="screen" />
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://pc-setup.ru/feed" />
+		<link rel="alternate" type="text/xml" title="RSS .92" href="http://pc-setup.ru/feed/rss" />
+		<link rel="alternate" type="application/atom+xml" title="Athom 0.3" href="Настройка компьютера | Блог Артёма Гурьянова" />
+		<link rel="pingback" href="http://pc-setup.ru/xmlrpc.php" />
+			
+		<!-- Responsive utils -->
+		<link href="http://pc-setup.ru/wp-content/themes/xmarkup/css/style-lg.css" rel="stylesheet">
+		<link href="http://pc-setup.ru/wp-content/themes/xmarkup/css/style-md.css" rel="stylesheet">
+		<link href="http://pc-setup.ru/wp-content/themes/xmarkup/css/style-sm.css" rel="stylesheet">
+		<link href="http://pc-setup.ru/wp-content/themes/xmarkup/css/style-xs.css" rel="stylesheet">
+
+		<!-- Print me -->
+		<link href="http://pc-setup.ru/wp-content/themes/xmarkup/css/print.css" rel="stylesheet">
+
+		<!-- Retina ready -->
+		<link href="http://pc-setup.ru/wp-content/themes/xmarkup/css/retina.css" rel="stylesheet">
+
+		<!-- Animation rules -->
+		<link href="http://pc-setup.ru/wp-content/themes/xmarkup/css/animation.css" rel="stylesheet">
+		
+		<!--[if IE]>
+			<script type="text/javascript" href="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+		<![endif]-->
+		<script>
+			function ScrollUp(){
+				$("#up_button").hide();
+				$(function () {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() > 50) {
+							$('#up_button').fadeIn();
+						} else {
+							$('#up_button').fadeOut();
+							}
+					});
+
+				$('#up_button').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+					});
+				});
+			}
+
+		</script>
+			
+	
+<!-- All in One SEO Pack 2.3.9 by Michael Torbert of Semper Fi Web Design[164,215] -->
+<meta name="description" itemprop="description" content="Записи по установке и настройке Windows. Инструкции к софту, настройка программ. Безопасность компьютера.  Советы и интересные статьи про интернет." />
+<link rel='next' href='http://pc-setup.ru/page/2' />
+
+<link rel="canonical" href="http://pc-setup.ru/" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/pc-setup.ru\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.23"}};
+			!function(e,o,t){var a,n,r;function i(e){var t=o.createElement("script");t.src=e,t.type="text/javascript",o.getElementsByTagName("head")[0].appendChild(t)}for(r=Array("simple","flag","unicode8","diversity","unicode9"),t.supports={everything:!0,everythingExceptFlag:!0},n=0;n<r.length;n++)t.supports[r[n]]=function(e){var t,a,n=o.createElement("canvas"),r=n.getContext&&n.getContext("2d"),i=String.fromCharCode;if(!r||!r.fillText)return!1;switch(r.textBaseline="top",r.font="600 32px Arial",e){case"flag":return(r.fillText(i(55356,56806,55356,56826),0,0),n.toDataURL().length<3e3)?!1:(r.clearRect(0,0,n.width,n.height),r.fillText(i(55356,57331,65039,8205,55356,57096),0,0),a=n.toDataURL(),r.clearRect(0,0,n.width,n.height),r.fillText(i(55356,57331,55356,57096),0,0),a!==n.toDataURL());case"diversity":return r.fillText(i(55356,57221),0,0),a=(t=r.getImageData(16,16,1,1).data)[0]+","+t[1]+","+t[2]+","+t[3],r.fillText(i(55356,57221,55356,57343),0,0),a!=(t=r.getImageData(16,16,1,1).data)[0]+","+t[1]+","+t[2]+","+t[3];case"simple":return r.fillText(i(55357,56835),0,0),0!==r.getImageData(16,16,1,1).data[0];case"unicode8":return r.fillText(i(55356,57135),0,0),0!==r.getImageData(16,16,1,1).data[0];case"unicode9":return r.fillText(i(55358,56631),0,0),0!==r.getImageData(16,16,1,1).data[0]}return!1}(r[n]),t.supports.everything=t.supports.everything&&t.supports[r[n]],"flag"!==r[n]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[r[n]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(a=function(){t.readyCallback()},o.addEventListener?(o.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),o.attachEvent("onreadystatechange",function(){"complete"===o.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?i(a.concatemoji):a.wpemoji&&a.twemoji&&(i(a.twemoji),i(a.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='http://pc-setup.ru/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.6.23' type='text/css' media='all' />
+<link rel='stylesheet' id='fes-default-css'  href='http://pc-setup.ru/wp-content/plugins/feedburner-email-subscription/templates/default/template.css?ver=4.6.23' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=1.7.2'></script>
+<link rel='https://api.w.org/' href='http://pc-setup.ru/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://pc-setup.ru/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://pc-setup.ru/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.23" />
+
+<script type="text/javascript">
+	function addHandler(object, event, handler) {
+		if (typeof object.addEventListener != 'undefined') 
+			object.addEventListener(event, handler, false);
+		else
+			if (typeof object.attachEvent != 'undefined')
+				object.attachEvent('on' + event, handler);
+			else 
+				throw 'Incompatible browser';
+	}
+</script>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url('http://pc-setup.ru/wp-content/uploads/Header.jpg'); background-repeat: no-repeat; background-position: top center; background-attachment: scroll; }
+</style>
+	
+</head>
+<body class="home blog custom-background full-width single-author">
+<header id="header">
+	<div class="wrapper">
+		<!--<a href="http://pc-setup.ru" id="logo-site"><img src="http://pc-setup.ru/wp-content/themes/xmarkup/images/logo.png"></a>-->
+						<a href="http://pc-setup.ru/" id="logo-site"><img src="http://pc-setup.ru/wp-content/uploads/cropped-Logo.png" class="header-image" width="500" height="70" alt=""></a>
+					<span id="site-description"></span>
+		
+    </div><!--End .wrapper-->
+    <div class="all-width">
+    	<div class="wrapper">
+    		<nav role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+				<ul class="menu-search-hidden">
+					<li><form method="get" class="searchform" action="http://pc-setup.ru/">
+	<input type="text" placeholder="Поиск" name="s" class="s">
+	<input type="submit" value="">
+</form></li>
+					<li id="menu_open_link">Открыть меню блога</li>
+				</ul>
+				<ul id="menu-header_menu_top" class="menu"><li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-23"><a itemprop="url" href="http://pc-setup.ru/">Главная</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a itemprop="url" href="http://pc-setup.ru/vse-stati">Все статьи сайта</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a itemprop="url" href="http://pc-setup.ru/konkursy">Конкурсы</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a itemprop="url" href="http://pc-setup.ru/reklama">Реклама</a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a itemprop="url" href="http://pc-setup.ru/avtor">Об авторе и блоге</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a itemprop="url" href="http://pc-setup.ru/kontakty">Обратная связь</a></li>
+</ul>			</nav>
+    	</div>
+    </div>
+</header><!--End #header-->	
+
+<section id="content"><!-- content -->
+	<div class="wrapper">
+		<article id="index_post_list_div">
+			<ul id="list_of_article">
+													<li itemscope itemtype="https://schema.org/BlogPosting">
+						<figure class="line_block_about mybrichka myposition">
+							<span class="author_line_block_about">Автор:</span>
+							<i class="addd" itemprop="author">Артём Гурьянов</i> / Дата: <span class="the_date" itemprop="datePublished">5-September-2016</span>
+                             в 7:00							<a href="http://pc-setup.ru/kak-udalit-fayl-kotoryy-trebuet-prav.html#new_comment_block" class="amount_of_comments">Комментариев нет</a>
+						</figure>
+
+												<a itemprop="url" href="http://pc-setup.ru/kak-udalit-fayl-kotoryy-trebuet-prav.html" class="article_name">
+							<span itemprop="headline">Как удалить файл, который требует права администратора</span>
+						</a>
+						<span class="the_excerpt" itemprop="description">
+							<p><img itemprop="image" src="http://pc-setup.ru/wp-content/uploads/intro_kak-udalit-fayl-kotoryy-trebuet-prav.png" alt="Как удалить файл, который требует права администратора" width="550" height="412" class="aligncenter size-full wp-image-1309" /><br />
+Добрый день. Вот только мы рассмотрели, <a target="_blank" href="http://pc-setup.ru/kak-poluchit-prava-administratora-v-windows-7.html">как получить права администратора в Windows 7</a>, как сразу же нашлось первое, для чего это может пригодиться. Безусловно, все пользователи удаляют те или иные файлы с компьютера: кто-то отправляет их в корзину и затем чистит её, кто-то уничтожает сразу подчистую нажатием клавиш SHIFT+DEL. Но бывает так, что это не помогает с некоторыми элементами, чаще всего принадлежащими уже ненужной программе. И удалить их можно, лишь обладая полными правами в операционной системе. Так как удалить файл, который требует права администратора? Читайте ниже.</p>
+						</span>
+						<figure class="labels">
+							<span>Рубрики: </span><i><a href="http://pc-setup.ru/category/bug-fixes"><span itemprop="articleSection">Решение проблем</span></a>
+							</i>
+							<a href="http://pc-setup.ru/kak-udalit-fayl-kotoryy-trebuet-prav.html">ЧИТАТЬ</a>
+							<a class="hiddenLink" href="http://pc-setup.ru/kak-udalit-fayl-kotoryy-trebuet-prav.html#commentators_block">КОММЕНТЫ</a>
+
+						</figure>
+					</li> 					
+									<li itemscope itemtype="https://schema.org/BlogPosting">
+						<figure class="line_block_about mybrichka myposition">
+							<span class="author_line_block_about">Автор:</span>
+							<i class="addd" itemprop="author">Артём Гурьянов</i> / Дата: <span class="the_date" itemprop="datePublished">4-September-2016</span>
+                             в 7:00							<a href="http://pc-setup.ru/kak-poluchit-prava-administratora-v-windows-7.html#new_comment_block" class="amount_of_comments">Комментариев нет</a>
+						</figure>
+
+												<a itemprop="url" href="http://pc-setup.ru/kak-poluchit-prava-administratora-v-windows-7.html" class="article_name">
+							<span itemprop="headline">Как получить права администратора в Windows 7</span>
+						</a>
+						<span class="the_excerpt" itemprop="description">
+							<p><img itemprop="image" class="aligncenter size-full wp-image-1297" src="http://pc-setup.ru/wp-content/uploads/intro_kak-poluchit-prava-administratora-v-windows-7.png" alt="Как получить права администратора в Windows 7" width="550" height="412" /></p>
+<p>Приветствую, друзья. После установки операционной системы мы используем созданную нами учётную запись. И она обладает далеко не полными правами, не позволяющими делать всё, что нам нужно. По умолчанию пользователь Администратор отключен. В Windows 7 права администратора включаются и отключаются по определённой процедуре, которую мы рассмотрим ниже.</p>
+						</span>
+						<figure class="labels">
+							<span>Рубрики: </span><i><a href="http://pc-setup.ru/category/windows"><span itemprop="articleSection">Windows</span></a>
+							</i>
+							<a href="http://pc-setup.ru/kak-poluchit-prava-administratora-v-windows-7.html">ЧИТАТЬ</a>
+							<a class="hiddenLink" href="http://pc-setup.ru/kak-poluchit-prava-administratora-v-windows-7.html#commentators_block">КОММЕНТЫ</a>
+
+						</figure>
+					</li> 					
+									<li itemscope itemtype="https://schema.org/BlogPosting">
+						<figure class="line_block_about mybrichka myposition">
+							<span class="author_line_block_about">Автор:</span>
+							<i class="addd" itemprop="author">Артём Гурьянов</i> / Дата: <span class="the_date" itemprop="datePublished">3-September-2016</span>
+                             в 7:00							<a href="http://pc-setup.ru/chto-takoe-gmail.html#new_comment_block" class="amount_of_comments">Комментариев нет</a>
+						</figure>
+
+												<a itemprop="url" href="http://pc-setup.ru/chto-takoe-gmail.html" class="article_name">
+							<span itemprop="headline">Что такое Gmail</span>
+						</a>
+						<span class="the_excerpt" itemprop="description">
+							<p><img itemprop="image" class="aligncenter size-full wp-image-1285" src="http://pc-setup.ru/wp-content/uploads/intro_chto-takoe-gmail.png" alt="Что такое Gmail" width="550" height="412" /></p>
+<p>Добрый день, уважаемые посетители. Сегодня речь пойдёт о том, что такое gmail и как им пользоваться. Наверняка те, кто уже знаком с этим, могут сказать, что это обычная электронная почта от Google. Это так, но помимо непосредственно почтового ящика есть еще некоторые возможности, доступные её владельцам, а также некоторые дополнительные удобные вещи.</p>
+<p>Постараюсь не перечислять то, что уже описано в куче статей и не слишком то используется обычным человеком, вроде создания шаблонов и использования альтернативных имён. Покажу лишь как пользоваться этим сервисом, а также пару функций, которыми пользуюсь я.</p>
+						</span>
+						<figure class="labels">
+							<span>Рубрики: </span><i><a href="http://pc-setup.ru/category/internet"><span itemprop="articleSection">Интернет</span></a>
+							</i>
+							<a href="http://pc-setup.ru/chto-takoe-gmail.html">ЧИТАТЬ</a>
+							<a class="hiddenLink" href="http://pc-setup.ru/chto-takoe-gmail.html#commentators_block">КОММЕНТЫ</a>
+
+						</figure>
+					</li> 					
+									<li itemscope itemtype="https://schema.org/BlogPosting">
+						<figure class="line_block_about mybrichka myposition">
+							<span class="author_line_block_about">Автор:</span>
+							<i class="addd" itemprop="author">Артём Гурьянов</i> / Дата: <span class="the_date" itemprop="datePublished">2-September-2016</span>
+                             в 7:00							<a href="http://pc-setup.ru/kak-vosstanovit-na-rabochem-stole-kor.html#new_comment_block" class="amount_of_comments">Комментариев нет</a>
+						</figure>
+
+												<a itemprop="url" href="http://pc-setup.ru/kak-vosstanovit-na-rabochem-stole-kor.html" class="article_name">
+							<span itemprop="headline">Как восстановить на рабочем столе корзину</span>
+						</a>
+						<span class="the_excerpt" itemprop="description">
+							<p><img itemprop="image" class="aligncenter size-full wp-image-1274" src="http://pc-setup.ru/wp-content/uploads/intro_kak-vosstanovit-na-rabochem-stole-kor.png" alt="Как восстановить на рабочем столе корзину" width="550" height="412" /></p>
+<p>Привет, друзья. На этот раз будет не полноценная статья, а скорее небольшая заметка о том, как восстановить на рабочем столе корзину, если она вдруг у вас не отображается или куда-то пропала. Стоит учесть, что если это дело “рук” вируса, то лучше сначала справиться с ним одним из способов (мои статьи). Иначе после восстановления ярлыка и перезагрузки системы проблема может вернуться.</p>
+						</span>
+						<figure class="labels">
+							<span>Рубрики: </span><i><a href="http://pc-setup.ru/category/bug-fixes"><span itemprop="articleSection">Решение проблем</span></a>
+							</i>
+							<a href="http://pc-setup.ru/kak-vosstanovit-na-rabochem-stole-kor.html">ЧИТАТЬ</a>
+							<a class="hiddenLink" href="http://pc-setup.ru/kak-vosstanovit-na-rabochem-stole-kor.html#commentators_block">КОММЕНТЫ</a>
+
+						</figure>
+					</li> 					
+									<li itemscope itemtype="https://schema.org/BlogPosting">
+						<figure class="line_block_about mybrichka myposition">
+							<span class="author_line_block_about">Автор:</span>
+							<i class="addd" itemprop="author">Артём Гурьянов</i> / Дата: <span class="the_date" itemprop="datePublished">1-September-2016</span>
+                             в 7:00							<a href="http://pc-setup.ru/kak-pereimenovat-fayl.html#new_comment_block" class="amount_of_comments">Комментариев нет</a>
+						</figure>
+
+												<a itemprop="url" href="http://pc-setup.ru/kak-pereimenovat-fayl.html" class="article_name">
+							<span itemprop="headline">Как переименовать файл</span>
+						</a>
+						<span class="the_excerpt" itemprop="description">
+							<p><img itemprop="image" class="aligncenter size-full wp-image-1263" src="http://pc-setup.ru/wp-content/uploads/intro_kak-pereimenovat-fayl.png" alt="Как переименовать файл" width="550" height="412" /></p>
+<p>Всем привет. Казалось бы такая простая тема: как файл переименовать наиболее быстрым и удобным методом. Но есть те, кто знаком с компьютером не достаточно хорошо, и даже такое маленькое дело вызывает вопросы. Ниже будет краткая заметка из 5 методов, которые помогут справиться с поставленной задачей.</p>
+						</span>
+						<figure class="labels">
+							<span>Рубрики: </span><i><a href="http://pc-setup.ru/category/advices"><span itemprop="articleSection">Советы</span></a>
+							</i>
+							<a href="http://pc-setup.ru/kak-pereimenovat-fayl.html">ЧИТАТЬ</a>
+							<a class="hiddenLink" href="http://pc-setup.ru/kak-pereimenovat-fayl.html#commentators_block">КОММЕНТЫ</a>
+
+						</figure>
+					</li> 					
+									<li itemscope itemtype="https://schema.org/BlogPosting">
+						<figure class="line_block_about mybrichka myposition">
+							<span class="author_line_block_about">Автор:</span>
+							<i class="addd" itemprop="author">Артём Гурьянов</i> / Дата: <span class="the_date" itemprop="datePublished">31-August-2016</span>
+                             в 7:00							<a href="http://pc-setup.ru/kak-vernut-bios-k-zavodskim-nastroykam.html#new_comment_block" class="amount_of_comments"><span itemprop="commentCount">1</span> комментарий</a>
+						</figure>
+
+												<a itemprop="url" href="http://pc-setup.ru/kak-vernut-bios-k-zavodskim-nastroykam.html" class="article_name">
+							<span itemprop="headline">Как вернуть BIOS к заводским настройкам</span>
+						</a>
+						<span class="the_excerpt" itemprop="description">
+							<p><img itemprop="image" class="aligncenter size-full wp-image-1256" src="http://pc-setup.ru/wp-content/uploads/intro_kak-vernut-bios-k-zavodskim-nastroykam.png" alt="Как вернуть BIOS к заводским настройкам" width="550" height="412" /></p>
+<p>Приветствую. BIOS является важной и неотъемлемой частью любого компьютера или ноутбука, без него нормальное функционирование машины невозможно. И в случае, если вы поменяли там какие-либо параметры, которые привели к неработоспособности ПК, или, например, установили пароль на вход, а затем забыли, логичным будет вопрос: как вернуть биос к заводским настройкам.</p>
+<p>Рассмотрим 3 основных способа.</p>
+						</span>
+						<figure class="labels">
+							<span>Рубрики: </span><i><a href="http://pc-setup.ru/category/bug-fixes"><span itemprop="articleSection">Решение проблем</span></a>
+							</i>
+							<a href="http://pc-setup.ru/kak-vernut-bios-k-zavodskim-nastroykam.html">ЧИТАТЬ</a>
+							<a class="hiddenLink" href="http://pc-setup.ru/kak-vernut-bios-k-zavodskim-nastroykam.html#commentators_block">КОММЕНТЫ</a>
+
+						</figure>
+					</li> 					
+				  
+							</ul>
+			<nav class="navigation"><span class='page-numbers current'>1</span>
+<a class='page-numbers' href='http://pc-setup.ru/page/2'>2</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class='page-numbers' href='http://pc-setup.ru/page/13'>13</a>
+<a class="next page-numbers" href="http://pc-setup.ru/page/2"></a></nav>	
+		</article>
+		<aside id="side_bar">
+		            <section class="top_comm_wid" id="search-2"><form method="get" class="searchform" action="http://pc-setup.ru/">
+	<input type="text" placeholder="Поиск" name="s" class="s">
+	<input type="submit" value="">
+</form></section><section class="top_comm_wid" id="feedburner-email-subscription-4">	<form class="module_subscribe" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri='pc-setup', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+					
+				<input type="text" value="Введите свой e-mail" onfocus="if(this.value=='Введите свой e-mail')this.value='';" onblur="if(this.value=='')this.value='Введите свой e-mail'" name="email">
+			
+			<button type="submit">Подписаться</button>			
+				<input type="hidden" value="pc-setup" name="uri" />
+		<input type="hidden" name="loc" value="ru_RU" />
+		
+	</form>
+	</section><section class="top_comm_wid" id="categories-2"><h3>Categories</h3>		<ul>
+	<li class="cat-item cat-item-17"><a href="http://pc-setup.ru/category/windows" >Windows</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://pc-setup.ru/category/security" >Безопасность</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://pc-setup.ru/category/hardware" >Железо</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://pc-setup.ru/category/internet" >Интернет</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://pc-setup.ru/category/others" >Прочее</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://pc-setup.ru/category/bug-fixes" >Решение проблем</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://pc-setup.ru/category/advices" >Советы</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://pc-setup.ru/category/soft" >Софт</a>
+</li>
+		</ul>
+</section>
+<section class="top_comm_wid" id="topcomm-widget-2">
+<h3>Самые активные</h3>
+<ul>
+<li>Стань первым, кто оставит комментарий!</li>
+</ul>
+</section>
+		
+</aside>
+
+<script>
+	$('.tagcloud > a').attr('style','');
+</script>
+
+		
+		<div class="c-b"></div>	
+	</div><!--End .wrapper-->
+</section><!--End #content-->
+
+<input type="hidden" name="VNnnfjWLbrjN" id="VNnnfjWLbrjN" />
+<script type="text/javascript">
+function fXLgybtnTdWmY() {
+	var o=document.getElementById("VNnnfjWLbrjN");
+	o.value="zX0Ak4aHL4ej";
+}
+var bGOa8hJlrEr0r = document.getElementById("submit");
+if (bGOa8hJlrEr0r) {
+	var c3nGLX8kY3S6Q = document.getElementById("VNnnfjWLbrjN");
+	var pEZ83Gge9smcr = bGOa8hJlrEr0r.parentNode;
+	pEZ83Gge9smcr.appendChild(c3nGLX8kY3S6Q, bGOa8hJlrEr0r);
+	addHandler(bGOa8hJlrEr0r, "mousedown", fXLgybtnTdWmY);
+	addHandler(bGOa8hJlrEr0r, "keypress", fXLgybtnTdWmY);
+}
+</script>
+<script type='text/javascript' src='http://pc-setup.ru/wp-includes/js/wp-embed.min.js?ver=4.6.23'></script>
+<footer>
+	<article>
+		<div class="wrapper" itemscope itemtype="https://schema.org/WPFooter">
+			<div id="up_button"></div>
+			<b id="copyright_footer">© <span itemprop="copyrightYear">2016</span> pc-setup.ru.</b>
+			<span id="copyright_full_footer">
+				Использование материалов без согласия автора и прямой индексируемой ссылки на сайт запрещено.
+			</span>
+			
+				
+		</div>
+	</article>
+	<div class="wrapper">
+		<div id="liveinternet">
+ 				            <section class="footer-lamp">			<div class="textwidget"><!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t44.11;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+//--></script><!--/LiveInternet--></div>
+		</section>					 </div>
+		<nav id="footer_menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
+				<ul id="menu-header_menu_top-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-23"><a itemprop="url" href="http://pc-setup.ru/">Главная</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a itemprop="url" href="http://pc-setup.ru/vse-stati">Все статьи сайта</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a itemprop="url" href="http://pc-setup.ru/konkursy">Конкурсы</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a itemprop="url" href="http://pc-setup.ru/reklama">Реклама</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a itemprop="url" href="http://pc-setup.ru/avtor">Об авторе и блоге</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a itemprop="url" href="http://pc-setup.ru/kontakty">Обратная связь</a></li>
+</ul>		</nav>
+		<div class="c-b"></div>
+    </div><!--End .wrapper-->
+</footer><!--End #footer-->
+<script>
+	$(document).ready(function(){ 
+		//Исправляет баги в мобильных версиях сайта
+	(function(doc) {
+
+			var addEvent = 'addEventListener',
+				type = 'gesturestart',
+				qsa = 'querySelectorAll',
+				scales = [1, 1],
+				meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+			function fix() {
+				meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+				doc.removeEventListener(type, fix, true);
+			}
+
+			if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+				fix();
+				scales = [.25, 1.5];
+				doc[addEvent](type, fix, true);
+			}
+
+	}(document));
+
+		ScrollUp();
+
+		var nav_x;
+		var nav_y;
+		var test_nav;
+
+		if($(window).width() < 770) {
+
+			nav_x = $('.navigation').width();
+			nav_y = $(window).width();
+			test_nav = nav_y / 2  - nav_x / 2;
+			test_nav = test_nav - 15;
+			$('.navigation').css('margin-left', test_nav+'px');
+
+		}
+		else {
+			nav_x = $('.navigation').width();
+			nav_y = $('#index_post_list_div').width();
+			test_nav = nav_y / 2  - nav_x / 2;
+			test_nav = test_nav - 15;
+			$('.navigation').css('margin-left', test_nav+'px');
+		}
+		$(window).resize(function(){
+			if($(window).width() < 770) {
+				nav_x = $('.navigation').width();
+				nav_y = $(window).width();
+				test_nav = nav_y / 2  - nav_x / 2;
+				test_nav = test_nav - 15;
+				$('.navigation').css('margin-left', test_nav+'px');
+			}
+			else {
+				nav_x = $('.navigation').width();
+				nav_y = $('#index_post_list_div').width();
+				test_nav = nav_y / 2  - nav_x / 2;
+				test_nav = test_nav - 15;
+				$('.navigation').css('margin-left', test_nav+'px');
+			}
+
+		});
+
+
+
+		$('#menu_open_link').click(function(){					
+			$('#header .menu').fadeToggle();
+		});
+		var perev = 0;
+		if($(window).width() < 770) {
+			$('#header .menu').css('display','none');			
+		}
+		$(window).resize(function() {
+		if($(window).width() < 770) {
+			$('#header .menu').css('display','none');			
+		}
+		});
+
+	});
+    function GoTo(link){
+        window.open(link.replace("_","http://"));
+    }
+</script>
+<script type= "text/javascript">function GoTo(link){window.open(link.replace("_","http://"));}</script>
+</body>
+</html><!-- hyper cache 2022-06-09 03:43:01 -->
